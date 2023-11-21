@@ -24,7 +24,7 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-taxono
 require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-taxonomy-search-all-terms.php';
 
 // Include the updater files
-include_once('updater.php');
+require_once plugin_dir_path( __FILE__ ) . 'includes/extra/updater-helper.php';
 
 
 
