@@ -83,7 +83,7 @@ class Taxonomy_Search_WooCommerce {
                     } else {
                         // do nothing
                     }
-                    echo '<div class="term-name">';
+                    echo '<div class="new-term-name">';
                     echo '<h4><a href="' . esc_url( $term_url ) . '">' . $term_name . '</a></h4>';
                     echo '</div>';
                     echo '</div>';
@@ -120,10 +120,10 @@ class Taxonomy_Search_WooCommerce {
     // Enqueue assets
     public function enqueue_assets() {
         // Enqueue CSS file
-        wp_enqueue_style( 'style-css', plugin_dir_url( __FILE__ ) . 'assets/css/style.css', array(), '1.0.0' );
+        wp_enqueue_style( 'style-css', plugin_dir_url( __FILE__ ) . 'assets/css/style.css', array(), '1.0.1' );
 
         // Enqueue JS file
-        wp_enqueue_script( 'main-js', plugin_dir_url( __FILE__ ) . 'assets/js/main.js', array( 'jquery' ), '1.0.0', true );
+        wp_enqueue_script( 'main-js', plugin_dir_url( __FILE__ ) . 'assets/js/main.js', array( 'jquery' ), '1.0.1', true );
 
         // Localize script with AJAX URL
         wp_localize_script(
