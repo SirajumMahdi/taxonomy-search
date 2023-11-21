@@ -25,6 +25,10 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-taxono
 
 // Include the updater files
 require_once plugin_dir_path( __FILE__ ) . 'includes/extra/updater-helper.php';
+$updater_path = plugin_dir_path(__FILE__) . 'includes/extra/updater.php';
+include_once $updater_path;
+
+
 
 // Initialize the plugin
 new Taxonomy_Search_WooCommerce();
