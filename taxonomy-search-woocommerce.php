@@ -23,5 +23,8 @@ require_once plugin_dir_path( __FILE__ ) . 'class-taxonomy-search-woocommerce.ph
 require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-taxonomy-search.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/shortcodes/shortcode-taxonomy-search-all-terms.php';
 
+// Include the updater files
+require_once plugin_dir_path( __FILE__ ) . 'includes/extra/updater-helper.php';
+
 // Initialize the plugin
 new Taxonomy_Search_WooCommerce();
