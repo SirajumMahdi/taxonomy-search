@@ -3,7 +3,7 @@
  * Plugin Name: Taxonomy Search WooCommerce
  * Plugin URI: https://your-plugin-uri.com
  * Description: Add taxonomy search functionality with WooCommerce integration.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Sirajum Mahdi
  * Author URI: https://sirajummahdi.com
  * License: GPL-2.0+
