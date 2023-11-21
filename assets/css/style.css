@@ -1,0 +1,123 @@
+.tax-lists {
+  display: flex;
+  gap: 25px;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.tax-item {
+  width: 18%;
+  background-color: #f2f2f2;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+.term-img {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.term-name h4 a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+.term-name {
+  height: 23px;
+  overflow: hidden;
+}
+.pagination {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page-numbers:not(ul.page-numbers) {
+  padding: 5px 10px;
+  background: #fff;
+  color: #000;
+  margin-right: 6px;
+  border: 1px solid #FF6A00;
+}
+span.page-numbers.current {
+  background: #FF6A00;
+  color: #fff;
+}
+
+.taxonomy-search-form {
+  width: 370px !important;
+}
+
+div#taxonomy-search-autocomplete {
+  position: absolute;
+  overflow-y: auto; /* Use "auto" for vertical scrollbar when needed */
+  top: 51px;
+  width: 312px;
+  border: 1px solid #e5e5e5;
+  box-shadow: rgba(0, 0, 0, 0.15) 8px 7px 8px -5px;
+  max-height: 252px; /* Set a maximum height to limit the suggestions */
+}
+
+.taxonomy-search-form .taxonomy-search-submit:after {
+  content: "\f130";
+  font-family: "woodmart-font";
+}
+
+.taxonomy-search-form .taxonomy-search-submit:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: calc((var(--wd-form-height) / 2.5) / -2);
+  margin-left: calc((var(--wd-form-height) / 2.5) / -2);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  content: "";
+  display: inline-block;
+  width: calc(var(--wd-form-height) / 2.5);
+  height: calc(var(--wd-form-height) / 2.5);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-left-color: currentColor;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+input#term_search {
+  width: 300px;
+  padding: 4px 43px 4px 15px;
+  border-color: var(--wd-primary-color);
+}
+
+button.taxonomy-search-submit {
+  position: absolute;
+  left: 315px;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0px 0 10px;
+  border-radius: 4px;
+  background-color: var(--wd-primary-color);
+  color: #fff;
+}
+
+.taxonomy-autocomplete-suggestion {
+  background: #fff;
+  padding: 7px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 0;
+  color: #000;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.25s ease;
+  font-size: 13px;
+  font-weight: 300 !important;
+}
+
+@media (max-width: 767px) {
+  .tax-item {
+    width: 22%;
+  }
+}
+
+@media (max-width: 576px) {
+  .tax-item {
+    width: 46%;
+  }
+}
